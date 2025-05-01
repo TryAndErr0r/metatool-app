@@ -38,7 +38,7 @@ services:
       target: migrator
     command: pnpm drizzle-kit migrate
     env_file:
-      - .env
+      - example.env
     depends_on:
       metatool-postgres:
         condition: service_healthy
